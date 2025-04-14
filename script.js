@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Initialize particles.js
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.js config loaded');
+    });
+
     // --- Initial Hero Animations Trigger ---
     const heroElements = document.querySelectorAll('#hero-logo, #hero h1, .hero-button, #hero-image');
     // Use setTimeout to ensure styles are applied and transition can occur
